@@ -10,6 +10,20 @@ Der verwendete Datensatz stammt aus dem **UCI Machine Learning Repository**.
 - **Features:** 22 verschiedene akustische Merkmale der Stimme.
 - **Zielvariable (`status`):** 1 für Parkinson-Patienten, 0 für gesunde Probanden.
 
+## 📊 Analyseergebnisse
+
+Das Modell erreicht eine Genauigkeit von **94,87 %**.
+
+### Confusion Matrix
+Hier sieht man, dass alle Parkinson-Fälle korrekt erkannt wurden (hoher Recall).
+
+![Confusion Matrix](plots/confusion_matrix.jpg)
+
+### Feature Importance
+Die wichtigsten akustischen Merkmale, die zur Diagnose beigetragen haben:
+
+![Feature Importance](plots/feature_importance.jpg)
+
 ## 🛠 Tech Stack
 - **Sprache:** Python 3.x
 - **Libraries:** - `xgboost` (Modellierung)
